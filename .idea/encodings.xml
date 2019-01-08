@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-common/elema-common-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-common/elema-common-framework" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-common/elema-common-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-discovery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-generator/elema-generator-dmc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-generator/elema-generator-tdc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-generator/elema-generator-uaac" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-provider-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-provider-api/elema-provider-api-dmc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-provider-api/elema-provider-api-uaac" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-provider-api/elema-provier-api-tdc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-provider/elema-provider-dmc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-provider/elema-provider-tdc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac" charset="UTF-8" />
+  </component>
+</project>

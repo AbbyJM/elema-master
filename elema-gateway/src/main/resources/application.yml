@@ -1,0 +1,18 @@
+server:
+  port: 9999
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: elema-gateway
+  datasource:
+    url: jdbc:mysql://localhost:3306/elema_uaac
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 30000
+  ConnectTimeout: 30000

@@ -1,0 +1,4 @@
+elema:
+  rocketmq:
+    namesrvAddr: localhost:9876
+    defaultProducerGroup: GROUP_TDC

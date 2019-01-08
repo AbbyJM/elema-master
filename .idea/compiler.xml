@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="elema-common-config" />
+        <module name="elema-common-framework" />
+        <module name="elema-common-security" />
+        <module name="elema-discovery" />
+        <module name="elema-eureka" />
+        <module name="elema-gateway" />
+        <module name="elema-generator-dmc" />
+        <module name="elema-generator-tdc" />
+        <module name="elema-generator-uaac" />
+        <module name="elema-provider-api-dmc" />
+        <module name="elema-provider-api-uaac" />
+        <module name="elema-provider-dmc" />
+        <module name="elema-provider-tdc" />
+        <module name="elema-provider-uaac" />
+        <module name="elema-provier-api-tdc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="elema-generator-tpc" target="1.8" />
+      <module name="elema-provider-mdc" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  cloud:
+    config:
+      discovery:
+        service-id:  elema-discovery
+        enabled: true
+      fail-fast: true
+      label: dev
+      profile: dev
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:123456@localhost:8761/eureka/
+    fetch-registry: true
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}

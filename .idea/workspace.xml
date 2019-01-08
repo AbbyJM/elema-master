@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/UserTokenServiceImpl.java" line="37" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="684ea8c6-b711-4f92-97b1-121b09201fde" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/security/ImageCodeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/security/ImageCodeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/security/UserAccountStatusFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/security/UserAccountStatusFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/UserTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/UserTokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/UserServiceImpl.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/elema-common/target/" />
+    <ignored path="$PROJECT_DIR$/elema-provider/target/" />
+    <ignored path="$PROJECT_DIR$/elema-common/elema-common-framework/target/" />
+    <ignored path="$PROJECT_DIR$/elema-eureka/target/" />
+    <ignored path="$PROJECT_DIR$/elema-discovery/target/" />
+    <ignored path="$PROJECT_DIR$/elema-common/elema-common-security/target/" />
+    <ignored path="$PROJECT_DIR$/elema-provider/elema-provider-uaac/target/" />
+    <ignored path="$PROJECT_DIR$/elema-common/elema-common-config/target/" />
+    <ignored path="$PROJECT_DIR$/elema-generator/elema-generator-uaac/target/" />
+    <ignored path="$PROJECT_DIR$/elema-generator/target/" />
+    <ignored path="$PROJECT_DIR$/elema-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/elema-provider-api/elema-provider-api-uaac/target/" />
+    <ignored path="$PROJECT_DIR$/elema-provider-api/target/" />
+    <ignored path="$PROJECT_DIR$/elema-provider-api/elema-provier-api-tdc/target/" />
+    <ignored path="$PROJECT_DIR$/elema-provider/elema-provider-tdc/target/" />
+    <ignored path="$PROJECT_DIR$/elema-generator/elema-generator-tpc/target/" />
+    <ignored path="$PROJECT_DIR$/elema-generator/elema-generator-tdc/target/" />
+    <ignored path="$PROJECT_DIR$/elema-provider/elema-provider-mdc/target/" />
+    <ignored path="$PROJECT_DIR$/elema-provider/elema-provider-dmc/target/" />
+    <ignored path="$PROJECT_DIR$/elema-generator/elema-generator-dmc/target/" />
+    <ignored path="$PROJECT_DIR$/elema-provider-api/elema-provider-api-dmc/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AccessDeniedHandlerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/config/AccessDeniedHandlerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="806">
+              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticationSuccessHandlerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/config/AuthenticationSuccessHandlerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="44" selection-start-line="44" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="228" column="45" selection-start-line="228" selection-start-column="45" selection-end-line="228" selection-end-column="45" />
+              <folding>
+                <element signature="e#6961#6962#0" expanded="true" />
+                <element signature="e#7012#7013#0" expanded="true" />
+                <element signature="e#7061#7062#0" expanded="true" />
+                <element signature="e#7133#7134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisListenerConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/redis/RedisListenerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>channel</find>
+      <find>setContent</find>
+      <find>objectMapper</find>
+      <find>AuthenticationErrr</find>
+      <find>AuthenticationErrror</find>
+      <find>IpAddressApi</find>
+      <find>IpAddressFeignClient</find>
+      <find>eureka</find>
+      <find>FeignTokenINter</find>
+      <find>ImageCodeFilter</find>
+      <find>status</find>
+      <find>BaseResultMap</find>
+      <find>start</find>
+      <find>tdc</find>
+      <find>rocketmq</find>
+      <find>swagger</find>
+      <find>match</find>
+      <find>Preconditions</find>
+      <find>toString</find>
+      <find>isNotEmpty</find>
+      <find>Precondi</find>
+      <find>LOG_URL</find>
+      <find>getUserNameById</find>
+      <find>failed to find to</find>
+      <find>TOKEN_NO</find>
+      <find>/api</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/elema-common/elema-common-framework</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/mapper/UaacUserMapper.java" />
+        <option value="$PROJECT_DIR$/elema-provider-api/elema-provider-api-dmc/src/main/java/com/abby/elema/model/dto/RegisterStoreDto.java" />
+        <option value="$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/model/enums/StoreStatusEnum.java" />
+        <option value="$PROJECT_DIR$/elema-provider-api/elema-provider-api-dmc/src/main/java/com/abby/elema/model/dto/ModifyPasswordDto.java" />
+        <option value="$PROJECT_DIR$/elema-provider-api/elema-provider-api-uaac/src/main/java/com/abby/elema/model/dto/ModifyPasswordDto.java" />
+        <option value="$PROJECT_DIR$/elema-provider-api/elema-provider-api-uaac/src/main/java/com/abby/elema/model/dto/ResetPasswordDto.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/EmailService.java" />
+        <option value="$PROJECT_DIR$/elema-common/elema-common-config/src/main/java/com/abby/elema/ElemaPropertiesConfiguration.java" />
+        <option value="$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/aspect/LogAspect.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/web/TestController.java" />
+        <option value="$PROJECT_DIR$/elema-discovery/src/main/resources/config/application-dev.yml" />
+        <option value="$PROJECT_DIR$/elema-common/elema-common-config/src/main/java/com/abby/elema/InstanceUrlsProperties.java" />
+        <option value="$PROJECT_DIR$/elema-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/mybatis/SqlSessionConfig.java" />
+        <option value="$PROJECT_DIR$/elema-gateway/src/main/java/com/abby/elema/ElemaGatewayApplication.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/resources/templates/resetPasswordEn.ftl" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/model/EmailTemplateEnums.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/EmailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/elema-provider-api/elema-provider-api-dmc/pom.xml" />
+        <option value="$PROJECT_DIR$/elema-provider-api/elema-provider-api-dmc/src/main/java/com/abby/elema/interfaces/StoreApi.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/resources/mapper/StoreMapper.xml" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/java/com/abby/elema/mapper/StoreMapper.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/java/com/abby/elema/service/StoreService.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/ElemaUaacApplication.java" />
+        <option value="$PROJECT_DIR$/elema-provider-api/elema-provider-api-dmc/src/main/java/com/abby/elema/hystrix/StoreFeignFallback.java" />
+        <option value="$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/wrapper/ResponseObject.java" />
+        <option value="$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/wrapper/ResponseWrapper.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/java/com/abby/elema/web/TestController.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/resources/mapper/UaacRoleMapper.xml" />
+        <option value="$PROJECT_DIR$/elema-common/elema-common-security/src/main/java/com/abby/elema/interceptor/PrivilegeInterceptor.java" />
+        <option value="$PROJECT_DIR$/elema-provider-api/elema-provider-api-uaac/src/main/java/com/abby/elema/interfaces/UserApi.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/feign/UserFeignClient.java" />
+        <option value="$PROJECT_DIR$/elema-provider-api/elema-provider-api-uaac/src/main/java/com/abby/elema/hystrix/UserFeignFallback.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/java/com/abby/elema/service/impl/StoreServiceImpl.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/java/com/abby/elema/web/StoreController.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/java/com/abby/elema/feign/Test.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/config/AccessDeniedHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/config/UserLoginSecurityConfigAdapter.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/web/frontend/ValidateCodeController.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/web/frontend/UserController.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/config/AuthenticationSuccessHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/util/TokenUtil.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/security/ImageCodeFilter.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/task.fxml" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/UserTokenService.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/UserService.java" />
+        <option value="$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/UserServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="G:/../maven" />
+        <option name="userSettingsFile" value="G:/../maven/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="485" />
+    <option name="y" value="23" />
+    <option name="width" value="1051" />
+    <option name="height" value="612" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="elema-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elema-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elema-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elema-master" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elema-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elema-master" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider-uaac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elema-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elema-master" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider-uaac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elema-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elema-master" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider-uaac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elema-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elema-master" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider-uaac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elema-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elema-master" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="elema-provider-uaac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="elema" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="G:/jiaqing-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.365991" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ElemaDmcApplication">
+    <configuration name="PaginationPlugin (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abby.elema.PaginationPlugin" />
+      <module name="elema-generator-tdc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abby.elema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="PaginationPlugin (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abby.elema.PaginationPlugin" />
+      <module name="elema-generator-dmc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abby.elema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="PaginationPlugin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.abby.elema.PaginationPlugin" />
+      <module name="elema-generator-uaac" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abby.elema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="elema-gateway" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="mavenRun" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+                <option value="-Dmaven.test.skip=true" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/elema-provider/elema-provider-uaac" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration name="mavenDebug" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8088" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8088" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+    </configuration>
+    <configuration name="ElemaDiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="elema-discovery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abby.elema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abby.elema.ElemaDiscoveryApplication" />
+      <option name="VM_PARAMETERS" value="-Xms128m -Xmx128m " />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration name="ElemaDmcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="elema-provider-dmc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abby.elema.ElemaDmcApplication" />
+    </configuration>
+    <configuration name="ElemaEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="elema-eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abby.elema.ElemaEurekaServerApplication" />
+      <option name="VM_PARAMETERS" value="-Xmx128m -Xms128m " />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration name="ElemaGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="elema-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abby.elema.ElemaGatewayApplication" />
+      <option name="VM_PARAMETERS" value="-Xms128m -Xmx128m " />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration name="ElemaTdcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="elema-provider-tdc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abby.elema.ElemaTdcApplication" />
+    </configuration>
+    <configuration name="ElemaUaacApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="elema-provider-uaac" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.abby.elema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.abby.elema.ElemaUaacApplication" />
+      <option name="VM_PARAMETERS" value="-Xms128m -Xmx128m " />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.mavenRun" />
+      <item itemvalue="Remote.mavenDebug" />
+      <item itemvalue="Spring Boot.ElemaEurekaServerApplication" />
+      <item itemvalue="Spring Boot.ElemaGatewayApplication" />
+      <item itemvalue="Spring Boot.ElemaTdcApplication" />
+      <item itemvalue="Spring Boot.ElemaDmcApplication" />
+      <item itemvalue="Application.PaginationPlugin" />
+      <item itemvalue="Application.PaginationPlugin (1)" />
+      <item itemvalue="Spring Boot.ElemaDiscoveryApplication" />
+      <item itemvalue="Spring Boot.ElemaUaacApplication" />
+      <item itemvalue="Application.PaginationPlugin (2)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ElemaUaacApplication" />
+        <item itemvalue="Spring Boot.ElemaDiscoveryApplication" />
+        <item itemvalue="Application.PaginationPlugin (2)" />
+        <item itemvalue="Application.PaginationPlugin (1)" />
+        <item itemvalue="Application.PaginationPlugin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBeansView">
+    <option name="showInfrastructureBeans" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="684ea8c6-b711-4f92-97b1-121b09201fde" name="Default" comment="" />
+      <created>1538824038220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538824038220</updated>
+      <workItem from="1538824042164" duration="3260000" />
+      <workItem from="1538827461535" duration="632000" />
+      <workItem from="1538828390610" duration="7995000" />
+      <workItem from="1538836767294" duration="4466000" />
+      <workItem from="1538874224732" duration="21829000" />
+      <workItem from="1538956594887" duration="2047000" />
+      <workItem from="1538978252686" duration="9601000" />
+      <workItem from="1539010045988" duration="2917000" />
+      <workItem from="1539042723115" duration="4366000" />
+      <workItem from="1539065257523" duration="92000" />
+      <workItem from="1539173743735" duration="2006000" />
+      <workItem from="1539175836733" duration="1000000" />
+      <workItem from="1539177206469" duration="5075000" />
+      <workItem from="1539216164669" duration="9601000" />
+      <workItem from="1539264086844" duration="27288000" />
+      <workItem from="1539326559239" duration="11547000" />
+      <workItem from="1539387966163" duration="20028000" />
+      <workItem from="1539440457441" duration="6927000" />
+      <workItem from="1539502786707" duration="1807000" />
+      <workItem from="1540252343196" duration="2878000" />
+      <workItem from="1540442789598" duration="1910000" />
+      <workItem from="1540444714459" duration="10653000" />
+      <workItem from="1540540938260" duration="5427000" />
+      <workItem from="1540560331941" duration="5634000" />
+      <workItem from="1540566301776" duration="1257000" />
+      <workItem from="1540602686290" duration="15076000" />
+      <workItem from="1540824877504" duration="1940000" />
+      <workItem from="1540856615916" duration="847000" />
+      <workItem from="1540859761119" duration="4554000" />
+      <workItem from="1540877466892" duration="445000" />
+      <workItem from="1540880438758" duration="896000" />
+      <workItem from="1540882191955" duration="2756000" />
+      <workItem from="1541031628925" duration="4674000" />
+      <workItem from="1541038290000" duration="1338000" />
+      <workItem from="1541040503983" duration="390000" />
+      <workItem from="1541047880391" duration="10370000" />
+      <workItem from="1541085020190" duration="13877000" />
+      <workItem from="1541161023762" duration="6281000" />
+      <workItem from="1541221099417" duration="20868000" />
+      <workItem from="1541318167661" duration="1578000" />
+      <workItem from="1541329803553" duration="19014000" />
+      <workItem from="1541417014892" duration="15155000" />
+      <workItem from="1541472275728" duration="10000" />
+      <workItem from="1541472345468" duration="65000" />
+      <workItem from="1541472693298" duration="86000" />
+      <workItem from="1541552964574" duration="12291000" />
+      <workItem from="1541596984562" duration="129090000" />
+      <workItem from="1541997408390" duration="31269000" />
+      <workItem from="1542084949834" duration="38762000" />
+      <workItem from="1542253228418" duration="11327000" />
+      <workItem from="1542280963191" duration="1580000" />
+      <workItem from="1542295378257" duration="811000" />
+      <workItem from="1542356212657" duration="748000" />
+      <workItem from="1542378554395" duration="2674000" />
+      <workItem from="1542630872270" duration="12763000" />
+      <workItem from="1542986126768" duration="3541000" />
+      <workItem from="1543064682296" duration="5074000" />
+      <workItem from="1543717338603" duration="5916000" />
+      <workItem from="1543738046586" duration="98000" />
+      <workItem from="1543835864151" duration="9000" />
+      <workItem from="1543836177082" duration="257000" />
+      <workItem from="1543836487518" duration="8000" />
+      <workItem from="1544071696125" duration="9875000" />
+      <workItem from="1544098529611" duration="882000" />
+      <workItem from="1545395434564" duration="6565000" />
+      <workItem from="1546068203091" duration="135000" />
+      <workItem from="1546596347325" duration="596000" />
+      <workItem from="1546602260609" duration="23000" />
+      <workItem from="1546604213152" duration="439000" />
+      <workItem from="1546606142095" duration="4595000" />
+      <workItem from="1546643614495" duration="594000" />
+      <workItem from="1546647479697" duration="8613000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="753552000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5014641" side_tool="true" weight="0.3267857" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.20278184" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24963397" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29642856" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.5539216" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32857144" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.5392157" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.4875" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32857144" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21669106" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.43214285" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49853587" visible="true" weight="0.74509805" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5014641" side_tool="true" weight="0.3267857" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21961933" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32857144" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32857144" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24963397" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.20278184" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.4875" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.43137255" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Statistic" order="12" weight="0.54642856" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29642856" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="2" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.4875" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.34285715" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32857144" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5014641" side_tool="true" weight="0.3267857" />
+      <window_info anchor="bottom" id="Statistic" order="12" weight="0.54642856" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32857144" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.20278184" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18081991" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.49642858" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24963397" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.43214285" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29642856" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.8.RELEASE/spring-security-web-5.0.8.RELEASE-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="44" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/elema_uaac.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="77" column="699" selection-start-line="77" selection-start-column="699" selection-end-line="77" selection-end-column="699" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-common/elema-common-security/src/main/java/com/abby/elema/interceptor/PrivilegeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/java/com/abby/elema/security/ResourceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/model/enums/ResponseStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/java/com/abby/elema/mq/RocketmqProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/java/com/abby/elema/mq/consumer/MessageConsumerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/wrapper/ResponseObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider-api/elema-provider-api-uaac/src/main/java/com/abby/elema/hystrix/UserFeignFallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider-api/elema-provider-api-uaac/src/main/java/com/abby/elema/interfaces/UserApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/java/com/abby/elema/web/TestController.java" />
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/java/com/abby/elema/mq/RocketMQProducerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/feign/UserFeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/java/com/abby/elema/model/domain/TransactionMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/java/com/abby/elema/mq/UaacTransactionalListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/aspect/LogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/model/enums/UserGroupEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/java/com/abby/elema/mq/consumer/UaacMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="42" column="62" lean-forward="true" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/ServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/java/com/abby/elema/web/StoreController.java" />
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/java/com/abby/elema/feign/Test.java" />
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/java/com/abby/elema/service/impl/StoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.8.RELEASE/spring-security-config-5.0.8.RELEASE.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="198" column="24" selection-start-line="198" selection-start-column="24" selection-end-line="198" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/ElemaUaacApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/config/UserLoginSecurityConfigAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/security/UserAccountStatusFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/web/frontend/TokenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar!/com/thoughtworks/xstream/core/util/Base64Encoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/web/frontend/ValidateCodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="41" column="70" lean-forward="true" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-dmc/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-tdc/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/eu/bitwalker/UserAgentUtils/1.21/UserAgentUtils-1.21.jar!/eu/bitwalker/useragentutils/UserAgent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/util/RequestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="75" column="50" lean-forward="true" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/web/frontend/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/security/ImageCodeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/config/AccessDeniedHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-common/elema-common-framework/src/main/java/com/abby/elema/util/TokenUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/util/UserUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/UserLogImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/task.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/redis/RedisListenerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/redis/RedisMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.10.RELEASE/spring-data-redis-2.0.10.RELEASE.jar!/org/springframework/data/redis/core/ValueOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-common/elema-common-config/src/main/java/com/abby/elema/redis/RedisProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding>
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/UserTokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/UserTokenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2756">
+          <caret line="113" column="47" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/config/AuthenticationSuccessHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="44" selection-start-line="44" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elema-provider/elema-provider-uaac/src/main/java/com/abby/elema/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="228" column="45" selection-start-line="228" selection-start-column="45" selection-end-line="228" selection-end-column="45" />
+          <folding>
+            <element signature="e#6961#6962#0" expanded="true" />
+            <element signature="e#7012#7013#0" expanded="true" />
+            <element signature="e#7061#7062#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.365991" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (elema-provider-uaac)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.365991" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>elema-provider-api-uaac</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.365991" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.thoughtworks.xstream:xstream:1.4.10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.365991" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

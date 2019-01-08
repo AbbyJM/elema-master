@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.abby.elema.mapper.UaacUserTokenMapper">
+  <resultMap id="BaseResultMap" type="com.abby.elema.model.domain.UaacUserToken">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_status" jdbcType="VARCHAR" property="userStatus" />
+    <result column="access_token" jdbcType="VARCHAR" property="accessToken" />
+    <result column="target_os" jdbcType="VARCHAR" property="targetOs" />
+    <result column="target_browser" jdbcType="VARCHAR" property="targetBrowser" />
+    <result column="target_ip" jdbcType="VARCHAR" property="targetIp" />
+    <result column="login_time" jdbcType="TIMESTAMP" property="loginTime" />
+    <result column="login_location" jdbcType="VARCHAR" property="loginLocation" />
+    <result column="is_online" jdbcType="BIT" property="isOnline" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, user_name, user_status, access_token, target_os, target_browser, target_ip, 
+    login_time, login_location, is_online
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from uaac_user_token
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from uaac_user_token
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.abby.elema.model.domain.UaacUserToken">
+    insert into uaac_user_token (id, user_id, user_name, 
+      user_status, access_token, target_os, 
+      target_browser, target_ip, login_time, 
+      login_location, is_online)
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, 
+      #{userStatus,jdbcType=VARCHAR}, #{accessToken,jdbcType=VARCHAR}, #{targetOs,jdbcType=VARCHAR}, 
+      #{targetBrowser,jdbcType=VARCHAR}, #{targetIp,jdbcType=VARCHAR}, #{loginTime,jdbcType=TIMESTAMP}, 
+      #{loginLocation,jdbcType=VARCHAR}, #{isOnline,jdbcType=BIT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.abby.elema.model.domain.UaacUserToken">
+    insert into uaac_user_token
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="userStatus != null">
+        user_status,
+      </if>
+      <if test="accessToken != null">
+        access_token,
+      </if>
+      <if test="targetOs != null">
+        target_os,
+      </if>
+      <if test="targetBrowser != null">
+        target_browser,
+      </if>
+      <if test="targetIp != null">
+        target_ip,
+      </if>
+      <if test="loginTime != null">
+        login_time,
+      </if>
+      <if test="loginLocation != null">
+        login_location,
+      </if>
+      <if test="isOnline != null">
+        is_online,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userStatus != null">
+        #{userStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="accessToken != null">
+        #{accessToken,jdbcType=VARCHAR},
+      </if>
+      <if test="targetOs != null">
+        #{targetOs,jdbcType=VARCHAR},
+      </if>
+      <if test="targetBrowser != null">
+        #{targetBrowser,jdbcType=VARCHAR},
+      </if>
+      <if test="targetIp != null">
+        #{targetIp,jdbcType=VARCHAR},
+      </if>
+      <if test="loginTime != null">
+        #{loginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="loginLocation != null">
+        #{loginLocation,jdbcType=VARCHAR},
+      </if>
+      <if test="isOnline != null">
+        #{isOnline,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.abby.elema.model.domain.UaacUserToken">
+    update uaac_user_token
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userStatus != null">
+        user_status = #{userStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="accessToken != null">
+        access_token = #{accessToken,jdbcType=VARCHAR},
+      </if>
+      <if test="targetOs != null">
+        target_os = #{targetOs,jdbcType=VARCHAR},
+      </if>
+      <if test="targetBrowser != null">
+        target_browser = #{targetBrowser,jdbcType=VARCHAR},
+      </if>
+      <if test="targetIp != null">
+        target_ip = #{targetIp,jdbcType=VARCHAR},
+      </if>
+      <if test="loginTime != null">
+        login_time = #{loginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="loginLocation != null">
+        login_location = #{loginLocation,jdbcType=VARCHAR},
+      </if>
+      <if test="isOnline != null">
+        is_online = #{isOnline,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.abby.elema.model.domain.UaacUserToken">
+    update uaac_user_token
+    set user_id = #{userId,jdbcType=INTEGER},
+      user_name = #{userName,jdbcType=VARCHAR},
+      user_status = #{userStatus,jdbcType=VARCHAR},
+      access_token = #{accessToken,jdbcType=VARCHAR},
+      target_os = #{targetOs,jdbcType=VARCHAR},
+      target_browser = #{targetBrowser,jdbcType=VARCHAR},
+      target_ip = #{targetIp,jdbcType=VARCHAR},
+      login_time = #{loginTime,jdbcType=TIMESTAMP},
+      login_location = #{loginLocation,jdbcType=VARCHAR},
+      is_online = #{isOnline,jdbcType=BIT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="getOnlineByAccessToken" resultType="com.abby.elema.model.domain.UaacUserToken">
+    SELECT
+      <include refid="Base_Column_List"/>
+    FROM
+      uaac_user_token token
+    WHERE
+      token.access_token=#{accessToken,jdbcType=VARCHAR}
+    AND
+      token.is_online=true
+  </select>
+  <select id="getByAccessToken" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM
+    uaac_user_token token
+    WHERE
+    token.access_token=#{accessToken,jdbcType=VARCHAR}
+  </select>
+  <select id="getOnlineByName" resultType="com.abby.elema.model.domain.UaacUserToken">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM
+    uaac_user_token token
+    WHERE
+    token.user_name=#{userName,jdbcType=VARCHAR}
+  </select>
+</mapper>

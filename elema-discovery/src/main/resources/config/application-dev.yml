@@ -1,0 +1,34 @@
+elema:
+  security:
+    oauth2:
+      tokenStore: jwt
+      accessTokenValidationSeconds: 36000
+      jwtSignKey: elema-jwt-sign-key
+      clientId: elema-uaac
+      clientSecret: $2a$10$vuDiQ.ZnfaBvnvpwUucU9.wEcnzSPY9SE.Wei/baMv6TInVvgRpES
+      accessTokenUrl: http://127.0.0.1:9999/uaac/oauth/token
+      authUrl: http://localhost:9999/uaac/oauth/authorize
+      clientAuthenticationScheme: header
+  redis:
+    loginTokenValidationSeconds: 36000
+  mail:
+    host: smtp.163.com
+    username: elemaMaster
+    password: elema1234
+    port: 25
+    protocol: smtp
+    defaultEncoding: UTF-8
+  executor:
+    corePoolSize: 60
+    maxPoolSize: 100
+    queueCapacity: 5000
+    keepAliveSeconds: 3600
+    threadPrefix: elemaExecutor
+  instance-urls:
+    uaac:  http://127.0.0.1:7070
+    tdc:  http://127.0.0.1:8888
+    dmc: http://127.0.0.1:7777
+    log: http://127.0.0.1:9999/uaac/admin/log/save
+    accessToken: http://127.0.0.1:9999/uaac/oauth/token
+    userActive:  http://127.0.0.1:9999/uaac/api/user/active
+

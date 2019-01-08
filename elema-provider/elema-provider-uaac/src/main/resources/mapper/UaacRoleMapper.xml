@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.abby.elema.mapper.UaacRoleMapper">
+  <resultMap id="BaseResultMap" type="com.abby.elema.model.domain.UaacRole">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_role" jdbcType="VARCHAR" property="userRole" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, user_role
+  </sql>
+  <sql id="User_Role">
+    u.id as id,user_id,user_role,username
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from uaac_user_role
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from uaac_user_role
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.abby.elema.model.domain.UaacRole">
+    insert into uaac_user_role (id, user_id, user_role
+      )
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{userRole,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.abby.elema.model.domain.UaacRole">
+    insert into uaac_user_role
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="userRole != null">
+        user_role,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="userRole != null">
+        #{userRole,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.abby.elema.model.domain.UaacRole">
+    update uaac_user_role
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="userRole != null">
+        user_role = #{userRole,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.abby.elema.model.domain.UaacRole">
+    update uaac_user_role
+    set user_id = #{userId,jdbcType=INTEGER},
+      user_role = #{userRole,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="getRolesOfUserId" resultMap="BaseResultMap">
+    SELECT
+      <include refid="Base_Column_List"/>
+    FROM
+      uaac_user_role role
+    WHERE
+      role.user_id=#{id,jdbcType=INTEGER}
+  </select>
+  <select id="getRolesOfUserName" resultMap="BaseResultMap">
+    SELECT
+    <include refid="User_Role"/>
+    FROM
+    uaac_user_role role
+    INNER JOIN
+    uaac_user u
+    ON
+    u.id=role.user_id
+    WHERE
+    u.username=#{name,jdbcType=VARCHAR}
+  </select>
+</mapper>

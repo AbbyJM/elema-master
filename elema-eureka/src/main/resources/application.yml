@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: elema-eureka
+  security:
+    user:
+      name: root
+      password: 123456

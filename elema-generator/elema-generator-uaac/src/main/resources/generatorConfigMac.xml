@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="DBGenerator" targetRuntime="MyBatis3">
+        <commentGenerator >
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/elema_uaac?characterEncoding=UTF-8" userId="root" password="123456"/>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <javaModelGenerator targetPackage="com.abby.elema.model.domain" targetProject="/home/projects/elema-master/elema-provider/elema-provider-uaac/src/main/java"/>
+        <sqlMapGenerator targetPackage="mapper" targetProject="/home/projects/elema-master/elema-provider/elema-provider-uaac/src/main/resources"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.abby.elema.mapper" targetProject="/home/projects/elema-master/elema-provider/elema-provider-uaac/src/main/java"/>
+        <table schema="" tableName="uaac_user" domainObjectName="UaacUser"/>
+        <table schema="" tableName="uaac_user_role" domainObjectName="UaacRole"/>
+        <table schema="" tableName="uaac_user_token" domainObjectName="UaacUserToken"/>
+    </context>
+</generatorConfiguration>

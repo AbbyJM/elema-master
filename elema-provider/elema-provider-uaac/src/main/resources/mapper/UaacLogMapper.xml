@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.abby.elema.mapper.UaacLogMapper">
+  <resultMap id="BaseResultMap" type="com.abby.elema.model.domain.UaacLog">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="operator_id" jdbcType="INTEGER" property="operatorId" />
+    <result column="operator_name" jdbcType="VARCHAR" property="operatorName" />
+    <result column="message" jdbcType="VARCHAR" property="message" />
+    <result column="operation_type" jdbcType="VARCHAR" property="operationType" />
+    <result column="time_begin" jdbcType="TIMESTAMP" property="timeBegin" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="method_name" jdbcType="VARCHAR" property="methodName" />
+    <result column="target_os" jdbcType="VARCHAR" property="targetOs" />
+    <result column="ip_address" jdbcType="VARCHAR" property="ipAddress" />
+    <result column="browser_name" jdbcType="VARCHAR" property="browserName" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="time_used" jdbcType="INTEGER" property="timeUsed" />
+    <result column="request_url" jdbcType="VARCHAR" property="requestUrl" />
+    <result column="location_name" jdbcType="VARCHAR" property="locationName" />
+    <result column="request_params" jdbcType="VARCHAR" property="requestParams" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, operator_id, operator_name, message, operation_type, time_begin, class_name, 
+    method_name, target_os, ip_address, browser_name, status, time_used, request_url, 
+    location_name, request_params
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from uaac_log
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from uaac_log
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.abby.elema.model.domain.UaacLog">
+    insert into uaac_log (id, operator_id, operator_name, 
+      message, operation_type, time_begin, 
+      class_name, method_name, target_os, 
+      ip_address, browser_name, status, 
+      time_used, request_url, location_name, 
+      request_params)
+    values (#{id,jdbcType=INTEGER}, #{operatorId,jdbcType=INTEGER}, #{operatorName,jdbcType=VARCHAR}, 
+      #{message,jdbcType=VARCHAR}, #{operationType,jdbcType=VARCHAR}, #{timeBegin,jdbcType=TIMESTAMP}, 
+      #{className,jdbcType=VARCHAR}, #{methodName,jdbcType=VARCHAR}, #{targetOs,jdbcType=VARCHAR}, 
+      #{ipAddress,jdbcType=VARCHAR}, #{browserName,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, 
+      #{timeUsed,jdbcType=INTEGER}, #{requestUrl,jdbcType=VARCHAR}, #{locationName,jdbcType=VARCHAR}, 
+      #{requestParams,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.abby.elema.model.domain.UaacLog">
+    insert into uaac_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="operatorId != null">
+        operator_id,
+      </if>
+      <if test="operatorName != null">
+        operator_name,
+      </if>
+      <if test="message != null">
+        message,
+      </if>
+      <if test="operationType != null">
+        operation_type,
+      </if>
+      <if test="timeBegin != null">
+        time_begin,
+      </if>
+      <if test="className != null">
+        class_name,
+      </if>
+      <if test="methodName != null">
+        method_name,
+      </if>
+      <if test="targetOs != null">
+        target_os,
+      </if>
+      <if test="ipAddress != null">
+        ip_address,
+      </if>
+      <if test="browserName != null">
+        browser_name,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="timeUsed != null">
+        time_used,
+      </if>
+      <if test="requestUrl != null">
+        request_url,
+      </if>
+      <if test="locationName != null">
+        location_name,
+      </if>
+      <if test="requestParams != null">
+        request_params,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="operatorId != null">
+        #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="operatorName != null">
+        #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="message != null">
+        #{message,jdbcType=VARCHAR},
+      </if>
+      <if test="operationType != null">
+        #{operationType,jdbcType=VARCHAR},
+      </if>
+      <if test="timeBegin != null">
+        #{timeBegin,jdbcType=TIMESTAMP},
+      </if>
+      <if test="className != null">
+        #{className,jdbcType=VARCHAR},
+      </if>
+      <if test="methodName != null">
+        #{methodName,jdbcType=VARCHAR},
+      </if>
+      <if test="targetOs != null">
+        #{targetOs,jdbcType=VARCHAR},
+      </if>
+      <if test="ipAddress != null">
+        #{ipAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="browserName != null">
+        #{browserName,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="timeUsed != null">
+        #{timeUsed,jdbcType=INTEGER},
+      </if>
+      <if test="requestUrl != null">
+        #{requestUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="locationName != null">
+        #{locationName,jdbcType=VARCHAR},
+      </if>
+      <if test="requestParams != null">
+        #{requestParams,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.abby.elema.model.domain.UaacLog">
+    update uaac_log
+    <set>
+      <if test="operatorId != null">
+        operator_id = #{operatorId,jdbcType=INTEGER},
+      </if>
+      <if test="operatorName != null">
+        operator_name = #{operatorName,jdbcType=VARCHAR},
+      </if>
+      <if test="message != null">
+        message = #{message,jdbcType=VARCHAR},
+      </if>
+      <if test="operationType != null">
+        operation_type = #{operationType,jdbcType=VARCHAR},
+      </if>
+      <if test="timeBegin != null">
+        time_begin = #{timeBegin,jdbcType=TIMESTAMP},
+      </if>
+      <if test="className != null">
+        class_name = #{className,jdbcType=VARCHAR},
+      </if>
+      <if test="methodName != null">
+        method_name = #{methodName,jdbcType=VARCHAR},
+      </if>
+      <if test="targetOs != null">
+        target_os = #{targetOs,jdbcType=VARCHAR},
+      </if>
+      <if test="ipAddress != null">
+        ip_address = #{ipAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="browserName != null">
+        browser_name = #{browserName,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="timeUsed != null">
+        time_used = #{timeUsed,jdbcType=INTEGER},
+      </if>
+      <if test="requestUrl != null">
+        request_url = #{requestUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="locationName != null">
+        location_name = #{locationName,jdbcType=VARCHAR},
+      </if>
+      <if test="requestParams != null">
+        request_params = #{requestParams,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.abby.elema.model.domain.UaacLog">
+    update uaac_log
+    set operator_id = #{operatorId,jdbcType=INTEGER},
+      operator_name = #{operatorName,jdbcType=VARCHAR},
+      message = #{message,jdbcType=VARCHAR},
+      operation_type = #{operationType,jdbcType=VARCHAR},
+      time_begin = #{timeBegin,jdbcType=TIMESTAMP},
+      class_name = #{className,jdbcType=VARCHAR},
+      method_name = #{methodName,jdbcType=VARCHAR},
+      target_os = #{targetOs,jdbcType=VARCHAR},
+      ip_address = #{ipAddress,jdbcType=VARCHAR},
+      browser_name = #{browserName,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      time_used = #{timeUsed,jdbcType=INTEGER},
+      request_url = #{requestUrl,jdbcType=VARCHAR},
+      location_name = #{locationName,jdbcType=VARCHAR},
+      request_params = #{requestParams,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="getLogsOfType" resultMap="BaseResultMap">
+    SELECT
+      <include refid="Base_Column_List"/>
+      FROM
+      uaac_log log
+      WHERE
+        log.operation_type=#{logType,jdbcType=VARCHAR}
+  </select>
+  <select id="getLogsOfUserName" resultMap="BaseResultMap">
+    SELECT
+      <include refid="Base_Column_List"/>
+      FROM
+      uaac_log log
+      WHERE
+        log.operator_name=#{userName,jdbcType=VARCHAR}
+  </select>
+  <select id="getAllLogs" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM
+    uaac_log
+  </select>
+</mapper>

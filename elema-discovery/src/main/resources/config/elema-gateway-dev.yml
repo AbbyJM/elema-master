@@ -1,0 +1,17 @@
+zuul:
+  host:
+    socket-timeout-millis: 3000
+    connect-timeout-millis: 3000
+  force-original-query-string-encoding: true
+  routes:
+    uaac-route:
+      path: /uaac/**
+      service-id: elema-provider-uaac
+      sensitiveHeaders:
+    tdc-route:
+      path: /tdc/**
+      service-id: elema-provider-tdc
+      sensitiveHeaders:
+ribbon:
+  eager-load:
+    enabled: true
