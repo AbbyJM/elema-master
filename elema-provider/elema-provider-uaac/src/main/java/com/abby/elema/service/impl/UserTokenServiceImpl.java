@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 
-
+import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
 
@@ -83,5 +83,16 @@ public class UserTokenServiceImpl implements UserTokenService {
             return null;
         }
         return tokenMapper.getOnlineByName(name);
+    }
+
+    @Override
+    public boolean isLoginTokenValid(String token) {
+        return redisTemp.opsForValue().get(token)!=null;
+    }
+
+    @Override
+    public boolean isLoginTokenValid(HttpServletRequest request) {
+        String token=request.getHeader("loginToken");
+        return false;
     }
 }

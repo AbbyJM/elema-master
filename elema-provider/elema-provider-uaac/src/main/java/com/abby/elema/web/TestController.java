@@ -23,6 +23,8 @@ import freemarker.template.TemplateException;
 import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.task.TaskExecutor;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.*;
@@ -31,10 +33,7 @@ import javax.annotation.Resource;
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 /**
@@ -70,6 +69,9 @@ public class TestController {
 
     @Autowired
     private UaacUserMapper userMapper;
+
+    @Resource
+    private StringRedisTemplate stringRedisTemplate;
 
     @RequestMapping(value = "/test")
     @SaveLog(type = OperationEnum.TEST)
@@ -137,5 +139,10 @@ public class TestController {
         List<UaacLog> logs= logService.getLogsOfPage(2,10);
         LogUtil.info(logs.size()+"");
         return logs;
+    }
+
+    @RequestMapping(value = "/test/t")
+    public void t(){
+
     }
 }

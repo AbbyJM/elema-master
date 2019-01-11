@@ -215,11 +215,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean isLoginTokenValid(String loginToken) {
-        return getLoginUserDto(loginToken)!=null;
-    }
-
-    @Override
     public LoginUserDto getLoginUserDto(String token) {
         return (LoginUserDto) redisTemp.opsForValue().get(token);
     }

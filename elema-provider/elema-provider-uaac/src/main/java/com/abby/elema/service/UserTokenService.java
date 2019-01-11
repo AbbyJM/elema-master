@@ -5,6 +5,7 @@ import com.abby.elema.model.domain.UaacUserToken;
 import com.abby.elema.model.dto.EnvironmentDto;
 import com.abby.elema.model.dto.UserAuthDto;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -43,5 +44,12 @@ public interface UserTokenService {
      */
     UaacUserToken getTokenOnlineByName(String name);
 
+    /**
+     * check if a login token is valid
+     * @param token the login token
+     * @return true if the token is valid
+     */
+    boolean isLoginTokenValid(String token);
 
+    boolean isLoginTokenValid(HttpServletRequest request);
 }

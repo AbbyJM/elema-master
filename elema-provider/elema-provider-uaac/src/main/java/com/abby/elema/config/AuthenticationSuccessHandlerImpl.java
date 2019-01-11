@@ -2,6 +2,7 @@ package com.abby.elema.config;
 
 import com.abby.elema.ElemaProperties;
 
+import com.abby.elema.model.constants.RedisConstants;
 import com.abby.elema.model.domain.UaacUserToken;
 import com.abby.elema.model.dto.EnvironmentDto;
 import com.abby.elema.model.dto.LoginUserDto;

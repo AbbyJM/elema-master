@@ -109,7 +109,11 @@ public interface UserService {
      */
     boolean isRealNameVerified(String userName);
 
-    boolean isLoginTokenValid(String loginToken);
-
+    /**
+     * get the user login dto form redis server
+     * @param token the token
+     * @return the login dto
+     */
     LoginUserDto getLoginUserDto(String token);
+
 }
