@@ -14,6 +14,7 @@ public enum  ResponseStatusEnum {
     WRONG_CREDENTIALS(10000104,"wrong credentials"),
     ACCOUNT_LOCKED(10000105,"the account was locked"),
     ACCOUNT_WAIT_ACTIVE(10000106,"the account needs to be actived"),
+    LOGIN_TOKEN_INVALID(10000107,"the login token is invalid"),
 
     //user online status
     STATUS_ONLINE(20000101,"online"),
@@ -24,9 +25,12 @@ public enum  ResponseStatusEnum {
     REGISTER_FAILED(40000101,"register failed"),
     ILLEGAL_PARAMS(40000102,"illege user params"),
     NEED_SUPER_ADMIN(40000103,"the operation needs super admin privilege"),
+    BASIC_INFO_NOT_FOUND(40000104,"the basic infomation of user is not found"),
 
+    //mq status
     MQ_SEND_ERROR(50000101,"mq send error"),
     MQ_TRANSACTION_ERROR(50000102,"mq transaction error");
+
     private String message;
     private int code;
 

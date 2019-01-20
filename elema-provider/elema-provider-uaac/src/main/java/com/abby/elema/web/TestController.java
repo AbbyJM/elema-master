@@ -15,6 +15,7 @@ import com.abby.elema.model.enums.OperationEnum;
 import com.abby.elema.model.enums.UserGroupEnum;
 import com.abby.elema.service.EmailService;
 import com.abby.elema.service.UserLogService;
+import com.abby.elema.service.UserService;
 import com.abby.elema.util.LogUtil;
 import com.abby.elema.wrapper.ResponseWrapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -31,6 +32,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.mail.MessagingException;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
@@ -55,6 +57,7 @@ public class TestController {
 
     @Autowired
     private UaacLogMapper mapper;
+
     @Resource
     private EmailService emailService;
 
@@ -69,6 +72,9 @@ public class TestController {
 
     @Autowired
     private UaacUserMapper userMapper;
+
+    @Resource
+    private UserService userService;
 
     @Resource
     private StringRedisTemplate stringRedisTemplate;
@@ -142,7 +148,8 @@ public class TestController {
     }
 
     @RequestMapping(value = "/test/t")
-    public void t(){
+    public void t(HttpServletRequest request){
+        String loginToken=request.getHeader("loginToken");
 
     }
 }

@@ -11,6 +11,7 @@ import com.abby.elema.model.enums.ResponseStatusEnum;
 
 
 import com.abby.elema.service.UserService;
+import com.abby.elema.service.UserTokenService;
 import com.abby.elema.service.impl.UserTokenServiceImpl;
 
 import com.abby.elema.util.LogUtil;
@@ -24,6 +25,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -37,30 +39,31 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class AuthenticationSuccessHandlerImpl implements AuthenticationSuccessHandler {
 
-    @Autowired
-    private UserTokenServiceImpl userTokenService;
+    @Resource
+    private UserTokenService userTokenService;
 
-    @Autowired
+    @Resource
     private UserService userService;
 
-    @Autowired
+    @Resource
     private RedisTemplate<String,Object> redisTemp;
 
-    @Autowired
+    @Resource
     private ElemaProperties elemaProperties;
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
 
-        Object principal=authentication.getPrincipal();
+        /*
         UaacUserToken userToken=userTokenService.getTokenOnlineByName(((UserDetails)principal).getUsername());
         if(userToken!=null){
             LogUtil.info("user has already logged in,skip it...");
             String message="you have already logged in";
             ResponseWrapper.error(ResponseStatusEnum.STATUS_RELOGIN.getCode(),message,httpServletResponse);
             return;
-        }
+        }*/
 
+        Object principal=authentication.getPrincipal();
         //extract the access token
         String token=TokenUtil.extractAccessToken(httpServletRequest);
 
@@ -86,7 +89,7 @@ public class AuthenticationSuccessHandlerImpl implements AuthenticationSuccessHa
         loginUserDto.setUserName(userAuthDto.getUserName());
         loginUserDto.setUserRole(userAuthDto.getUserRole());
 
-        //try to save the login user token in redis server
+        //try to save the login user token to redis server
         redisTemp.opsForValue().set(token,loginUserDto,elemaProperties.getRedis().getLoginTokenValidationSeconds(),TimeUnit.SECONDS);
 
         httpServletResponse.setHeader("loginToken",token);

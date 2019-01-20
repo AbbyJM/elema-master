@@ -52,4 +52,12 @@ public interface UserTokenService {
     boolean isLoginTokenValid(String token);
 
     boolean isLoginTokenValid(HttpServletRequest request);
+
+    /**
+     * get the login token size on redis
+     * @return the size of the login tokens
+     */
+    int loginTokenSize();
+
+    String getUserNameOfLoginToken(String loginToken);
 }

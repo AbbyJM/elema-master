@@ -5,7 +5,7 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="phone" jdbcType="INTEGER" property="phone" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
     <result column="email" jdbcType="VARCHAR" property="email" />
     <result column="nickname" jdbcType="VARCHAR" property="nickname" />
     <result column="sex" jdbcType="VARCHAR" property="sex" />
@@ -15,23 +15,12 @@
     <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
     <result column="user_status" jdbcType="VARCHAR" property="userStatus" />
     <result column="user_group" jdbcType="VARCHAR" property="userGroup" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
   </resultMap>
   <sql id="Base_Column_List">
-    u.id,
-    u.username,
-    u.password,
-    u.phone,
-    u.email,
-    u.nickname,
-    u.sex,
-    u.region,
-    u.created_time,
-    u.update_time,
-    u.last_login_time,
-    u.user_status,
-    u.user_group
+    id, username, password, phone, email, nickname, sex, region, created_time, update_time, 
+    last_login_time, user_status, user_group, avatar
   </sql>
-
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
@@ -47,12 +36,12 @@
       phone, email, nickname, 
       sex, region, created_time, 
       update_time, last_login_time, user_status, 
-      user_group)
+      user_group, avatar)
     values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{phone,jdbcType=INTEGER}, #{email,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, 
+      #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, 
       #{sex,jdbcType=VARCHAR}, #{region,jdbcType=VARCHAR}, #{createdTime,jdbcType=TIMESTAMP}, 
       #{updateTime,jdbcType=TIMESTAMP}, #{lastLoginTime,jdbcType=TIMESTAMP}, #{userStatus,jdbcType=VARCHAR}, 
-      #{userGroup,jdbcType=VARCHAR})
+      #{userGroup,jdbcType=VARCHAR}, #{avatar,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.abby.elema.model.domain.UaacUser">
     insert into uaac_user
@@ -96,6 +85,9 @@
       <if test="userGroup != null">
         user_group,
       </if>
+      <if test="avatar != null">
+        avatar,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -108,7 +100,7 @@
         #{password,jdbcType=VARCHAR},
       </if>
       <if test="phone != null">
-        #{phone,jdbcType=INTEGER},
+        #{phone,jdbcType=VARCHAR},
       </if>
       <if test="email != null">
         #{email,jdbcType=VARCHAR},
@@ -137,6 +129,9 @@
       <if test="userGroup != null">
         #{userGroup,jdbcType=VARCHAR},
       </if>
+      <if test="avatar != null">
+        #{avatar,jdbcType=VARCHAR},
+      </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.abby.elema.model.domain.UaacUser">
@@ -149,7 +144,7 @@
         password = #{password,jdbcType=VARCHAR},
       </if>
       <if test="phone != null">
-        phone = #{phone,jdbcType=INTEGER},
+        phone = #{phone,jdbcType=VARCHAR},
       </if>
       <if test="email != null">
         email = #{email,jdbcType=VARCHAR},
@@ -178,6 +173,9 @@
       <if test="userGroup != null">
         user_group = #{userGroup,jdbcType=VARCHAR},
       </if>
+      <if test="avatar != null">
+        avatar = #{avatar,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -185,7 +183,7 @@
     update uaac_user
     set username = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
-      phone = #{phone,jdbcType=INTEGER},
+      phone = #{phone,jdbcType=VARCHAR},
       email = #{email,jdbcType=VARCHAR},
       nickname = #{nickname,jdbcType=VARCHAR},
       sex = #{sex,jdbcType=VARCHAR},
@@ -194,24 +192,25 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP},
       last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
       user_status = #{userStatus,jdbcType=VARCHAR},
-      user_group = #{userGroup,jdbcType=VARCHAR}
+      user_group = #{userGroup,jdbcType=VARCHAR},
+      avatar = #{avatar,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <select id="findUserByName" resultMap="BaseResultMap">
     SELECT
-      <include refid="Base_Column_List"/>
-      FROM
-       uaac_user u
-      WHERE
-        u.username=#{userName,jdbcType=VARCHAR}
+    <include refid="Base_Column_List" />
+    FROM
+    uaac_user u
+    WHERE
+    u.username=#{userName,jdbcType=VARCHAR}
   </select>
   <select id="findUserByEmail" resultMap="BaseResultMap">
     SELECT
-      <include refid="Base_Column_List"/>
+    <include refid="Base_Column_List" />
     FROM
-      uaac_user u
-      WHERE
-        u.email=#{email,jdbcType=VARCHAR}
+    uaac_user u
+    WHERE
+    u.email=#{email,jdbcType=VARCHAR}
   </select>
   <select id="getUserNameById" resultType="string">
     SELECT
@@ -223,7 +222,7 @@
   </select>
   <select id="getAllUsers" resultMap="BaseResultMap">
     SELECT
-    <include refid="Base_Column_List"/>
+    <include refid="Base_Column_List" />
     FROM
     uaac_user
   </select>

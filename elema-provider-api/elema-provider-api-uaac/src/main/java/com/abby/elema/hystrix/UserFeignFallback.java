@@ -23,4 +23,9 @@ public class UserFeignFallback implements UserApi {
     public String isUserVerified(String userName) throws JsonProcessingException {
         return null;
     }
+
+    @Override
+    public void getUserBasicInfo() {
+
+    }
 }

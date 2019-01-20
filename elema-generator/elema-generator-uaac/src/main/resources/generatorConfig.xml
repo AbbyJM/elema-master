@@ -11,12 +11,9 @@
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
-        <javaModelGenerator targetPackage="com.abby.elema.model.domain" targetProject="/home/projects/elema-master/elema-provider/elema-provider-uaac/src/main/java"/>
-        <sqlMapGenerator targetPackage="mapper" targetProject="/home/projects/elema-master/elema-provider/elema-provider-uaac/src/main/resources"/>
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.abby.elema.mapper" targetProject="/home/projects/elema-master/elema-provider/elema-provider-uaac/src/main/java"/>
+        <javaModelGenerator targetPackage="com.abby.elema.model.domain" targetProject="G:\elema-master\elema-provider\elema-provider-uaac\src\main\java"/>
+        <sqlMapGenerator targetPackage="mapper" targetProject="G:\elema-master\elema-provider\elema-provider-uaac\src\main/resources"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.abby.elema.mapper" targetProject="G:\elema-master\elema-provider\elema-provider-uaac\src\main\java"/>
         <table schema="" tableName="uaac_user" domainObjectName="UaacUser" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table schema="" tableName="uaac_user_role" domainObjectName="UaacRole" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"/>
-        <table schema="" tableName="uaac_user_token" domainObjectName="UaacUserToken" enableUpdateByExample="false" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"/>
-        <table schema="" tableName="uaac_log" domainObjectName="UaacLog" enableDeleteByExample="false" enableSelectByExample="false" enableCountByExample="false" enableUpdateByExample="false"/>
     </context>
 </generatorConfiguration>

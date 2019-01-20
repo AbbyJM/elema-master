@@ -2,10 +2,7 @@ package com.abby.elema.service;
 
 import com.abby.elema.model.domain.UaacRole;
 import com.abby.elema.model.domain.UaacUser;
-import com.abby.elema.model.dto.LoginUserDto;
-import com.abby.elema.model.dto.ModifyPasswordDto;
-import com.abby.elema.model.dto.UserAuthDto;
-import com.abby.elema.model.dto.UserRegisterDto;
+import com.abby.elema.model.dto.*;
 
 import java.util.List;
 
@@ -116,4 +113,24 @@ public interface UserService {
      */
     LoginUserDto getLoginUserDto(String token);
 
+    /**
+     * get the basic user infomation
+     * @param loginToken the login token of the user
+     * @return the user basic info dto
+     */
+    UserBasicInfoDto getUserInfoBasic(String loginToken);
+
+    /**
+     * get the user avatar url
+     * @param userName the user name
+     * @return the user avatar url
+     */
+    String getUserAvatarUrl(String userName);
+
+    /**
+     * update the user avatar url
+     * @param url the url
+     * @return true if updated successfully
+     */
+    boolean updateAvatarUrl(String url,String userName);
 }

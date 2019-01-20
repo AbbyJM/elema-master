@@ -8,6 +8,7 @@ import com.abby.elema.model.domain.UaacUserToken;
 import com.abby.elema.model.dto.EnvironmentDto;
 
 
+import com.abby.elema.model.dto.LoginUserDto;
 import com.abby.elema.model.dto.UserAuthDto;
 import com.abby.elema.service.UserTokenService;
 
@@ -19,9 +20,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author: Abby
@@ -30,13 +33,13 @@ import java.util.List;
 @Transactional(rollbackFor = Exception.class)
 public class UserTokenServiceImpl implements UserTokenService {
 
-    @Autowired
+    @Resource
     private UaacUserTokenMapper tokenMapper;
 
-    @Autowired
+    @Resource
     private UaacUserMapper userMapper;
 
-    @Autowired
+    @Resource
     private RedisTemplate<String,Object> redisTemp;
 
     @Override
@@ -93,6 +96,28 @@ public class UserTokenServiceImpl implements UserTokenService {
     @Override
     public boolean isLoginTokenValid(HttpServletRequest request) {
         String token=request.getHeader("loginToken");
-        return false;
+        LogUtil.info("token is "+token);
+        if(token==null){
+            return false;
+        }
+        return redisTemp.hasKey(token);
+    }
+
+    @Override
+    public int loginTokenSize() {
+        Set<String> keys=redisTemp.keys("eyJh"+"*");
+        if(keys==null||keys.isEmpty()){
+            return 0;
+        }
+        return keys.size();
+    }
+
+    @Override
+    public String getUserNameOfLoginToken(String loginToken) {
+        if(loginToken==null||loginToken.isEmpty()){
+            return null;
+        }
+        LoginUserDto loginUserDto=(LoginUserDto) redisTemp.opsForValue().get(loginToken);
+        return loginUserDto==null?null:loginUserDto.getUserName();
     }
 }

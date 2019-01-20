@@ -50,4 +50,9 @@ public class UserFeignClient implements UserApi {
         //TODO
         return ResponseWrapper.ok("queried successfully",true);
     }
+
+    @Override
+    public void getUserBasicInfo() {
+
+    }
 }

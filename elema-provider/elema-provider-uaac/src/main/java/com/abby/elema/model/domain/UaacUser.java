@@ -9,7 +9,7 @@ public class UaacUser {
 
     private String password;
 
-    private Integer phone;
+    private String phone;
 
     private String email;
 
@@ -28,6 +28,8 @@ public class UaacUser {
     private String userStatus;
 
     private String userGroup;
+
+    private String avatar;
 
     public Integer getId() {
         return id;
@@ -53,11 +55,11 @@ public class UaacUser {
         this.password = password;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -131,5 +133,13 @@ public class UaacUser {
 
     public void setUserGroup(String userGroup) {
         this.userGroup = userGroup;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }

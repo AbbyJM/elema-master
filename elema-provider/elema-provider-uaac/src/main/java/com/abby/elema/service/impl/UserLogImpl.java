@@ -63,7 +63,6 @@ public class UserLogImpl implements UserLogService {
 
     @Override
     public List<UaacLog> getLogsBetween(Date from, Date to) {
-
         return null;
     }
 

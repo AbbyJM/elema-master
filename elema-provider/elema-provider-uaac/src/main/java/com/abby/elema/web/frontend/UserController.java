@@ -6,10 +6,12 @@ import com.abby.elema.exception.RocketMqException;
 import com.abby.elema.interfaces.MQProducerApi;
 import com.abby.elema.model.constants.HttpConstants;
 import com.abby.elema.model.dto.RocketMessageDto;
+import com.abby.elema.model.dto.UserBasicInfoDto;
 import com.abby.elema.model.dto.UserRegisterDto;
 import com.abby.elema.model.enums.*;
 
 import com.abby.elema.service.UserService;
+import com.abby.elema.util.LogUtil;
 import com.abby.elema.util.UserUtil;
 import com.abby.elema.wrapper.ResponseWrapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -29,7 +31,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -100,5 +104,22 @@ public class UserController {
             return ResponseWrapper.error(ResponseStatusEnum.NEED_SUPER_ADMIN.getCode(),
                     ResponseStatusEnum.NEED_SUPER_ADMIN.getMessage());
         }
+    }
+
+    @RequestMapping(value = "/auth/user/info/basic",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public void getUserBasicInfo(HttpServletRequest request,HttpServletResponse response) throws IOException {
+        String loginToken=request.getHeader("loginToken");
+        LogUtil.info("found loginToken ,"+loginToken);
+        UserBasicInfoDto info=userService.getUserInfoBasic(loginToken);
+        if(info==null){
+            ResponseWrapper.error(ResponseStatusEnum.BASIC_INFO_NOT_FOUND.getCode(),ResponseStatusEnum.BASIC_INFO_NOT_FOUND.getMessage(),response);
+            return;
+        }
+        Map<String,Object> params=new HashMap<>(4);
+        params.put("status",200);
+        params.put("userName",info.getUserName());
+        params.put("avatar",info.getAvatar());
+        params.put("phone",info.getMobilePhone());
+        ResponseWrapper.response(params,response);
     }
 }

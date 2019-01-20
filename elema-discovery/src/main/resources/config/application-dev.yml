@@ -11,6 +11,11 @@ elema:
       clientAuthenticationScheme: header
   redis:
     loginTokenValidationSeconds: 36000
+  cos:
+    bucket: elema-1258316787
+    secretId: AKIDYkiSymTjsz66tcpT4ZAnKirBLYXYYpb8
+    secretKey: A7oGnKisoOmLf4FEzVjljU4QWS9xXt6v
+    region: ap-beijing
   mail:
     host: smtp.163.com
     username: elemaMaster

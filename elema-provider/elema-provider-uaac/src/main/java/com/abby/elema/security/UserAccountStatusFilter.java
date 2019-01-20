@@ -4,6 +4,7 @@ import com.abby.elema.model.domain.UaacUser;
 import com.abby.elema.model.enums.ResponseStatusEnum;
 import com.abby.elema.model.enums.UserAccountStatus;
 import com.abby.elema.service.UserService;
+import com.abby.elema.service.UserTokenService;
 import com.abby.elema.util.LogUtil;
 import com.abby.elema.wrapper.ResponseWrapper;
 import org.springframework.stereotype.Component;
@@ -25,11 +26,22 @@ public class UserAccountStatusFilter extends OncePerRequestFilter {
     @Resource
     private UserService userService;
 
+    @Resource
+    private UserTokenService tokenService;
+
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        if(tokenService.isLoginTokenValid(request)){
+            LogUtil.info("user has already logged in,skip it...");
+            String message="you have already logged in";
+            ResponseWrapper.error(ResponseStatusEnum.STATUS_RELOGIN.getCode(),message,response);
+            return;
+        }
+
+        //check if the user is locked
         String userName=request.getParameter("username");
         if(userName==null){
-            ResponseWrapper.error(500,"please provider parameter user name in your request");
+            ResponseWrapper.error(500,"please provider parameter user name on your request");
         }
 
         UaacUser user=userService.findUserByName(userName);
@@ -52,7 +64,6 @@ public class UserAccountStatusFilter extends OncePerRequestFilter {
             ResponseWrapper.error(ResponseStatusEnum.ACCOUNT_LOCKED.getCode(),ResponseStatusEnum.ACCOUNT_LOCKED.getMessage(),response);
             return;
         }
-
     }
 
     @Override

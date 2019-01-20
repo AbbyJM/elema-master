@@ -33,4 +33,6 @@ public interface UserApi {
     @RequestMapping(value = "/admin/user/isVerified",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     String isUserVerified(@RequestParam("userName")String userName) throws JsonProcessingException;
 
+    @RequestMapping(value = "/user/info/basic")
+    void getUserBasicInfo();
 }

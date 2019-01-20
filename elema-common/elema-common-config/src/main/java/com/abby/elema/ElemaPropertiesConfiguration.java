@@ -1,5 +1,6 @@
 package com.abby.elema;
 
+import com.abby.elema.cos.CosProperties;
 import com.abby.elema.mail.MailProperties;
 import com.abby.elema.mq.RocketmqProperties;
 
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableConfigurationProperties({MailProperties.class,TaskExecutorProperties.class,
-        ElemaProperties.class,RocketmqProperties.class,InstanceUrlsProperties.class})
+        ElemaProperties.class,RocketmqProperties.class,InstanceUrlsProperties.class,
+        CosProperties.class})
 public class ElemaPropertiesConfiguration {
 }

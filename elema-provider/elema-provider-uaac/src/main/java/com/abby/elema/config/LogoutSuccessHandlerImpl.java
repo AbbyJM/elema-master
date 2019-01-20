@@ -46,6 +46,5 @@ public class LogoutSuccessHandlerImpl implements LogoutSuccessHandler {
             ResponseWrapper.ok("logged out successfully",response);
             return;
         }
-
     }
 }

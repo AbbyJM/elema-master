@@ -1,7 +1,6 @@
 package com.abby.elema.mapper;
 
 import com.abby.elema.model.domain.UaacUser;
-import com.abby.elema.model.domain.UaacUserToken;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
@@ -29,4 +28,6 @@ public interface UaacUserMapper {
     String getUserNameById(int userId);
 
     List<UaacUser> getAllUsers();
+
+
 }

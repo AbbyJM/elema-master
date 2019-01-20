@@ -3,16 +3,14 @@ package com.abby.elema.service.impl;
 import com.abby.elema.mapper.UaacRoleMapper;
 import com.abby.elema.mapper.UaacUserMapper;
 import com.abby.elema.model.domain.UaacRole;
+
 import com.abby.elema.model.domain.UaacUser;
-
 import com.abby.elema.model.domain.UaacUserToken;
-import com.abby.elema.model.dto.LoginUserDto;
-import com.abby.elema.model.dto.ModifyPasswordDto;
-import com.abby.elema.model.dto.UserAuthDto;
+import com.abby.elema.model.dto.*;
 
-import com.abby.elema.model.dto.UserRegisterDto;
 import com.abby.elema.model.enums.UserAccountStatus;
 import com.abby.elema.model.enums.UserRoleEnum;
+import com.abby.elema.service.CosService;
 import com.abby.elema.service.UserService;
 import com.abby.elema.service.UserTokenService;
 
@@ -37,7 +35,6 @@ import java.util.List;
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class UserServiceImpl implements UserService {
-
     @Resource
     private UaacUserMapper uaacUserMapper;
 
@@ -53,8 +50,11 @@ public class UserServiceImpl implements UserService {
     @Resource
     private EmailServiceImpl emailService;
 
-    @Autowired
+    @Resource
     private RedisTemplate<String,Object> redisTemp;
+
+    @Resource
+    private CosService cosService;
 
     @Override
     public UaacUser findUserById(int id) {
@@ -201,7 +201,7 @@ public class UserServiceImpl implements UserService {
     public boolean isUserSeller(String userName) {
         List<UaacRole> roles=uaacRoleMapper.getRolesOfUserName(userName);
         for(UaacRole user:roles){
-            if(user.getUserRole().equals("SELLER")){
+            if(user.getUserRole().equals(UserRoleEnum.ROLE_SELLER.getUserRole())){
                 return true;
             }
         }
@@ -219,13 +219,41 @@ public class UserServiceImpl implements UserService {
         return (LoginUserDto) redisTemp.opsForValue().get(token);
     }
 
+    @Override
+    public UserBasicInfoDto getUserInfoBasic(String loginToken) {
+        String userName=tokenService.getUserNameOfLoginToken(loginToken);
+        UaacUser user=uaacUserMapper.findUserByName(userName);
+        if(user==null){
+            LogUtil.info("cannot find user with name "+userName);
+            return null;
+        }
+        UserBasicInfoDto info=new UserBasicInfoDto();
+        info.setUserName(userName);
+        info.setMobilePhone(user.getPhone());
+        info.setAvatar(getUserAvatarUrl(userName+".png"));
+        return info;
+    }
+
+    @Override
+    public String getUserAvatarUrl(String userName) {
+        return cosService.getDownloadUrl(userName);
+    }
+
+    @Override
+    public boolean updateAvatarUrl(String url,String userName) {
+        UaacUser user=findUserByName(userName);
+        if(user==null){
+            LogUtil.info("cannot find user with name "+userName);
+            return false;
+        }
+        user.setAvatar(url);
+        return uaacUserMapper.updateByPrimaryKey(user)>0;
+    }
+
     private boolean checkModifyPasswordDto(ModifyPasswordDto modifyPasswordDto){
         Preconditions.checkArgument(StringUtils.isNotEmpty(modifyPasswordDto.getLoginName()),"user name cannot be null");
         Preconditions.checkArgument(StringUtils.isNotEmpty(modifyPasswordDto.getOldPassword()),"old password cannot be null");
         Preconditions.checkArgument(StringUtils.isNotEmpty(modifyPasswordDto.getNewPassword()),"new password cannot be null");
-        if(!modifyPasswordDto.getNewPassword().equals(modifyPasswordDto.getConfirmPassword())){
-            return false;
-        }
-        return true;
+        return modifyPasswordDto.getNewPassword().equals(modifyPasswordDto.getConfirmPassword());
     }
 }
