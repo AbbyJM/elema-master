@@ -32,7 +32,7 @@ public class UserAccountStatusFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         if(tokenService.isLoginTokenValid(request)){
-            LogUtil.info("user has already logged in,skip it...");
+            LogUtil.info("the user has already logged in,skip it...");
             String message="you have already logged in";
             ResponseWrapper.error(ResponseStatusEnum.STATUS_RELOGIN.getCode(),message,response);
             return;

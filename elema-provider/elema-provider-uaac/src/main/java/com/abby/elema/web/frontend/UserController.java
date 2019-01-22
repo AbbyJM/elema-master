@@ -11,6 +11,7 @@ import com.abby.elema.model.dto.UserRegisterDto;
 import com.abby.elema.model.enums.*;
 
 import com.abby.elema.service.UserService;
+import com.abby.elema.service.UserTokenService;
 import com.abby.elema.util.LogUtil;
 import com.abby.elema.util.UserUtil;
 import com.abby.elema.wrapper.ResponseWrapper;
@@ -21,6 +22,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.MediaType;
 
 
+import org.springframework.security.core.token.TokenService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -53,6 +55,9 @@ public class UserController {
 
     @Resource
     private UserService userService;
+
+    @Resource
+    private UserTokenService tokenService;
 
     @RequestMapping(value = "/api/user/register",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @SaveLog(type = OperationEnum.REGISTER_USER)
@@ -109,7 +114,12 @@ public class UserController {
     @RequestMapping(value = "/auth/user/info/basic",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public void getUserBasicInfo(HttpServletRequest request,HttpServletResponse response) throws IOException {
         String loginToken=request.getHeader("loginToken");
-        LogUtil.info("found loginToken ,"+loginToken);
+        if(!tokenService.isLoginTokenValid(loginToken)){
+            //the login token is invalid which means the user has not logged in yet
+            ResponseWrapper.error(ResponseStatusEnum.LOGIN_TOKEN_INVALID.getCode(),ResponseStatusEnum.LOGIN_TOKEN_INVALID.getMessage(),response);
+            return;
+        }
+        LogUtil.info("found login token on the request:"+loginToken);
         UserBasicInfoDto info=userService.getUserInfoBasic(loginToken);
         if(info==null){
             ResponseWrapper.error(ResponseStatusEnum.BASIC_INFO_NOT_FOUND.getCode(),ResponseStatusEnum.BASIC_INFO_NOT_FOUND.getMessage(),response);

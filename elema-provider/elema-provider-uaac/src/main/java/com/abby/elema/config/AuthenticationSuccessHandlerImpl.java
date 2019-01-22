@@ -53,7 +53,6 @@ public class AuthenticationSuccessHandlerImpl implements AuthenticationSuccessHa
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
-
         /*
         UaacUserToken userToken=userTokenService.getTokenOnlineByName(((UserDetails)principal).getUsername());
         if(userToken!=null){
@@ -63,18 +62,17 @@ public class AuthenticationSuccessHandlerImpl implements AuthenticationSuccessHa
             return;
         }*/
 
+        //get the current user name
         Object principal=authentication.getPrincipal();
         //extract the access token
         String token=TokenUtil.extractAccessToken(httpServletRequest);
-
-        LogUtil.info("authentication successfully","login token is "+token);
+        LogUtil.info("authenticated successfully","the login token is "+token);
 
         //build the login environment
         EnvironmentDto environmentDto=new EnvironmentDto();
 
         //get the user details
         UserAuthDto userAuthDto=userService.buildUserAuthDto(((UserDetails) principal).getUsername());
-
         try {
             //save the user token details in database
             userTokenService.saveUserToken(token,environmentDto,userAuthDto);
@@ -92,6 +90,7 @@ public class AuthenticationSuccessHandlerImpl implements AuthenticationSuccessHa
         //try to save the login user token to redis server
         redisTemp.opsForValue().set(token,loginUserDto,elemaProperties.getRedis().getLoginTokenValidationSeconds(),TimeUnit.SECONDS);
 
+        //expose the login token on response header
         httpServletResponse.setHeader("loginToken",token);
         httpServletResponse.setHeader("Access-Control-Expose-Headers","loginToken");
         ResponseWrapper.ok("login successfully",httpServletResponse);
