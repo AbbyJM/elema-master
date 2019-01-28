@@ -5,7 +5,7 @@ spring:
   application:
     name: elema-provider-uaac
   redis:
-    host: 172.20.10.10
+    host: 192.168.1.10
     port: 6379
   datasource:
     url: jdbc:mysql://localhost:3306/elema_uaac
